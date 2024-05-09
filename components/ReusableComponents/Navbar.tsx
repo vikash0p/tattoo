@@ -30,8 +30,8 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 ${
-        scrollActive ? "bg-black" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 bg-black ${
+        scrollActive ? "bg-black" : "md:bg-transparent"
       }`}
     >
       <div className="w-full h-20 mx-auto px-4">
