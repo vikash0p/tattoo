@@ -1,33 +1,54 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind components;
+  @tailwind utilities;
+
+.Text_Stock{
+  color: transparent !important;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: wheat;
+}
+.Text_StockOne{
+  color: transparent !important;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #fb923c;
+}
+
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --swiper-theme-color: #fb923c !important;
+    /* --swiper-navigation-size: 24px !important; */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+.swiper-button-prev, .swiper-button-next{
+  color: #fb923c !important;
+  font-size: 24px !important;
+  background-color:white !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Custom bullet size */
+.swiper-pagination.swiper-pagination-bullets {
+  /* Example of custom bullet size */
+  width: 15px;
+  height: 15px;
+
+}
+
+/* Custom bullet styles */
+.swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+  /* Example of custom bullet size */
+  width: 15px;
+  height: 15px;
+  /* Example of custom bullet color */
+  background-color: #fb923c;
 }
